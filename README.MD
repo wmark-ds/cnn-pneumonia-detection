@@ -1,21 +1,31 @@
-### Detecting Pneumonia in X-Rays using CNN, with Grad-CAM XAI
-
-
+## Pneumonia Detection in Chest X-Rays using CNN and Grad-CAM
 A group project with Avan Salman.
 
+### Problem
+Detect pneumonia from chest X-ray images
 
-This repository features an implementation of a CNN for detecting Pneumonia in X-rays, using the Kaggle dataset: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+## Approach
+- Convolutional Neural Network (CNN) for image classification
+- Model interpretability with Grad-CAM and guided Grad-CAM
+- Hyperparameter optimization using Optuna
+- Baseline model using RandomForest
+
+## Results
+- Test accuracy: 0.92, F1 score: 0.91
+- Improved baseline model performance (baseline: https://www.kaggle.com/code/madz2000/pneumonia-detection-using-cnn-92-6-accuracy) 
+- Increased recall for the minority class (normal) from 0.77 -> 0.86
+- Minimal trade-off: recall for majority class decreased from 0.96 -> 0.95
+- Added interpretability through Grad-CAM and guided Grad-CAM visualizations
 
 
-
-- Using this Kaggle project as a baseline: https://www.kaggle.com/code/madz2000/pneumonia-detection-using-cnn-92-6-accuracy
-- We aimed to improve the model achitecture and implemented hyperparameter optimization using the Optuna package.
-- We also implemented Grad-CAM XAI technique. We used this guide to help implementation: https://keras.io/examples/vision/grad_cam/
-- For Grad-CAM we implemented both normal and guided Grad-CAM.
-
-
+## My contribution
+- Implemented and tested the baseline model architecture and training pipeline
+- Developed an alternative Random Forest baseline
+- Implemented Grad-CAM and guided Grad-CAM for interpretability
+- Conducted together with Avan to model evaluation and error analysis 
 
 
+## Grad-CAM results
 ![guided grad-cam](guided_grad_cam.png)
 ![false_negative](false_negatives.png)
 ![false positives](false_positives.png)
