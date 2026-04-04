@@ -22,7 +22,7 @@ Detect pneumonia from chest X-ray images
 - Implemented and tested the baseline model architecture and training pipeline
 - Developed an alternative Random Forest baseline
 - Implemented Grad-CAM and guided Grad-CAM for interpretability
-- Conducted together with Avan to model evaluation and error analysis 
+- Worked together with Avan on model evaluation and error analysis 
 
 
 ## Grad-CAM results
